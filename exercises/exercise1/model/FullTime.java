@@ -33,7 +33,7 @@ public class FullTime extends Student {
     @Override
     public void print() {
         // TODO Auto-generated method stub
-        System.out.println(name + " " + examScores[0] + " " + examScores[1]);
+        System.out.println(name + " First exam: " + examScores[0] + " Second exam: " + examScores[1]);
     }
 
 }
