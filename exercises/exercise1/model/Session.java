@@ -1,4 +1,5 @@
 package exercise1.model;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
@@ -9,21 +10,21 @@ public class Session {
     public ArrayList<Student> students;
     ArrayList<Integer> quizScoreList;
 
-    public Session(int TotalStudentsAmount) {
+    public Session(int TotalStudentsAmount, int quizAmount) {
         this.students = new ArrayList<>();
-        addStudents(TotalStudentsAmount);
+        addStudents(TotalStudentsAmount, quizAmount);
         quizScoreList = new ArrayList<>();
     }
 
-    public void addStudents(int total) {
+    public void addStudents(int total, int quizAmount) {
         Random r = new Random();
         int fulltimeStudentAmount = r.nextInt(total);
         int parttimeStudentAmount = total - fulltimeStudentAmount;
         for (int i = 0; i < fulltimeStudentAmount; i++) {
-            students.add(new FullTime("Full-Time-" + i, 15));
+            students.add(new FullTime("Full-Time-" + i, quizAmount));
         }
         for (int i = 0; i < parttimeStudentAmount; i++) {
-            students.add(new PartTime("Part-Time-" + i, 15));
+            students.add(new PartTime("Part-Time-" + i, quizAmount));
         }
     }
 
@@ -40,25 +41,25 @@ public class Session {
 
     public void printQuizScoreList() {
         for (Student s : students) {
-            for (int score: s.getQuizScores()) {
+            for (int score : s.getQuizScores()) {
                 quizScoreList.add(score);
             }
         }
         quizScoreList.sort(Comparator.naturalOrder());
         System.out.println("List of Quiz Scores \n =====");
-        for (int s: quizScoreList) {
+        for (int s : quizScoreList) {
             System.out.println(s);
         }
     }
 
     public void printPartTimeStudents() {
-        System.out.println("Students Names \n =====");
+        System.out.println("Part-Time Students Names \n =====");
         students.stream().filter(Predicate.not(Student::isFulltime)).forEach(Student::print);
     }
 
     public void printExamScores() {
-        System.out.println("Full-Time Student Exam Scores \n =====");
+        System.out.println("Full-Time Student's two Exam Scores \n =====");
         students.stream().filter(Student::isFulltime).forEach(Student::print);
     }
-    
+
 }
