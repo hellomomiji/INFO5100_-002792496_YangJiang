@@ -3,6 +3,9 @@ package exercise2;
 public class Triangle extends Shape {
   private double base;
   private double height;
+  private double sideA;
+  private double sideB;
+  private double sideC;
   public static final String NAME = "Triangle";
 
   public Triangle(String color, double base, double height) {
@@ -18,7 +21,6 @@ public class Triangle extends Shape {
 
   @Override
   public double calculatePerimeter() {
-    // Not implemented
-    return 0;
+    return sideA + sideB + sideC;
   }
 }

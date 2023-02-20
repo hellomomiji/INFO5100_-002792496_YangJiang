@@ -1,21 +1,21 @@
 package exercise2;
 
 public class Square extends Shape {
-  private double height;
+  private double length;
   public static final String NAME = "Square";
 
-  public Square(String color, double height) {
+  public Square(String color, double length) {
     super(color);
-    this.height = height;
+    this.length = length;
   }
 
   @Override
   public double calculateArea() {
-    return height * height;
+    return length * length;
   }
 
   @Override
   public double calculatePerimeter() {
-    return 4 * height;
+    return 4 * length;
   }
 }
