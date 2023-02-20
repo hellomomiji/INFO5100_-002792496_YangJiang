@@ -1,0 +1,21 @@
+package exercise2;
+
+public class Circle extends Shape {
+    private double radius;
+    public static final String NAME = "Circle";
+
+    public Circle(String color, double radius) {
+        super(color);
+        this.radius = radius;
+    }
+
+    @Override
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+
+    @Override
+    public double calculatePerimeter() {
+        return 2 * Math.PI * radius;
+    }
+}
