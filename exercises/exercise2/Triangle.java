@@ -8,10 +8,13 @@ public class Triangle extends Shape {
   private double sideC;
   public static final String NAME = "Triangle";
 
-  public Triangle(String color, double base, double height) {
+  public Triangle(String color, double base, double height, double sideA, double sideB, double sideC) {
     super(color);
     this.base = base;
     this.height = height;
+    this.sideA = sideA;
+    this.sideB = sideB;
+    this.sideC = sideC;
   }
 
   @Override
