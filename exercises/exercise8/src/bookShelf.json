@@ -1,0 +1,31 @@
+{
+  "BookShelf": {
+    "Book": [
+      {
+        "title": "Into Thin Air",
+        "publishedYear": "1997",
+        "numberOfPages": "320",
+        "authors": {
+          "author": "Jon Krakauer"
+        }
+      },
+
+      {
+        "title": "The 7 Habits of Highly Effective People",
+        "publishedYear": "2004",
+        "numberOfPages": "432",
+        "authors": {
+          "author": "Stephen Covey"
+        }
+      },
+      {
+        "title": "Thinking, Fast and Slow",
+        "publishedYear": "2013",
+        "numberOfPages": "499",
+        "authors": {
+          "author": "Daniel Kahneman"
+        }
+      }
+    ]
+  }
+}

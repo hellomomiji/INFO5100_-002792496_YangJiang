@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BookShelf>
+  <Book>
+    <title>Into Thin Air</title>
+    <publishedYear>1997</publishedYear>
+    <numberOfPages>320</numberOfPages>
+    <authors>
+      <author>Jon Krakauer</author>
+    </authors>
+  </Book>
+  <Book>
+    <title>The 7 Habits of Highly Effective People</title>
+    <publishedYear>2004</publishedYear>
+    <numberOfPages>432</numberOfPages>
+    <authors>
+      <author>Stephen Covey</author>
+    </authors>
+  </Book>
+  <Book>
+    <title>Thinking, Fast and Slow</title>
+    <publishedYear>2013</publishedYear>
+    <numberOfPages>499</numberOfPages>
+    <authors>
+      <author>Daniel Kahneman</author>
+    </authors>
+  </Book>
+</BookShelf>
